@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Please Sign In</title>
+</head>
+<body>
+    {% if message %}
+        <p style="color:red;">{{ message }}</p>
+    {% endif %}
+    <form action="/signin" method="post">
+        <legend>Please sign in:</legend>
+        <p>username：<input name="username" placeholder="UserName" value="{{ username }}"/></p>
+        <p>password：<input name="password" placeholder="Password" type="password"/></p>
+        <p><button type="submit">Sign In</button></p>
+    </form>
+</body>
+</html>

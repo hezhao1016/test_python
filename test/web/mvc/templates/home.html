@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <h1 style="font-style:italic">Home</h1>
+    <a href='/signin'>去登录</a>
+
+    <hr/>
+
+    <ol>
+    {% for i in ['香蕉', '苹果', '梨子', '菠萝', '橘子'] %}
+        <li>{{ i }}</li>
+    {% endfor %}
+    </ol>
+
+</body>
+</html>

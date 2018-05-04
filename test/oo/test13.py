@@ -8,7 +8,7 @@ s.name = 'Bob'
 print(s.name)
 
 def set_age(self,age):
-    self.age = age;
+    self.age = age
 
 from types import MethodType
 s.set_age = MethodType(set_age, s)  # 给实例绑定一个方法

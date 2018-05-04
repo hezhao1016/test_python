@@ -161,6 +161,22 @@ print('1,2,3,4'.split(','))
 print('-'.join(['A', 'B', 'C', 'D']))
 
 
+
+####################### eval 函数妙用 ##########################
+# 可以把list,tuple,dict和string相互转化。
+def eval_test():
+    l = '[1,2,3,4,[5,6,7,8,9]]'
+    d = "{'a':123,'b':456,'c':789}"
+    t = '([1,3,5],[5,6,7,8,9],[123,456,789])'
+    print('--------------------------转化开始--------------------------------')
+    print(type(l), type(eval(l)), l)
+    print(type(d), type(eval(d)), d)
+    print(type(t), type(eval(t)), t)
+
+if __name__ == "__main__":
+    eval_test()
+
+
 # Python数据类型转换
 '''
 int(x [,base])      将x转换为一个整数

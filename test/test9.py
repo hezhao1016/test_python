@@ -12,15 +12,9 @@
 # 模块名不要和系统模块名冲突，最好先查看系统是否已存在该模块，检查方法是在Python交互环境执行import abc，若成功则说明系统存在此模块。
 
 
+__author__ = 'He Zhao'
 
-
-# !/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-' a test module '
-
-__author__ = 'Michael Liao'
-
+# 导入模块
 import sys
 
 def test():
@@ -32,6 +26,7 @@ def test():
     else:
         print('Too many arguments!')
 
+# 只有直接运行本文件才会执行，其他模块导入不会执行
 if __name__=='__main__':
     test()
 

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Django</title>
+</head>
+<body>
+    <h1>语言列表</h1>
+    <hr/>
+    <ol>
+    {# 使用for循环，注意：必须是从控制器传过来的数组，在模板创建的不可以,例如: #}
+    {# {% for obj in ['a', 'b', 'c'] %} #}
+
+    {% for obj in list %}
+        <li {% if obj == 'Python' %}style="color: red;"{% endif %}>{{ obj }}</li>
+    {% endfor %}
+    </ol>
+</body>
+</html>
